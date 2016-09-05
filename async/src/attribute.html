@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload=function(){
+            console.log("handler 1");
+        }
+        // 很多其它框架，库，主题 的代码
+        var handlerbak=window.onload
+        window.onload=function(){
+            handlerbak();
+            console.log("handler 2");
+        }
+
+    </script>
+</body>
+</html>
