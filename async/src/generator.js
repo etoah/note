@@ -30,35 +30,19 @@ function sleep(ms){
 console.log("---------------fetch data-------------------")
 import fetch from 'node-fetch'
 
-//fetch('https://api.github.com/users/etoah').then((data)=>console.log("data:",data))
-// fetch('https://api.github.com/users/github')
-//     .then(function(res) {
-//          console.log(res.json().then(a=>console.log("a,",a)));
-//     })
-
-// co(function* (){
-//     let result= yield fetch('https://api.github.com/users/etoah')
-//     let json =yield result.json()
-//     console.log("result:",json)
-// });
-
-import * as request from 'request'
 co(function* (){
-    let result= yield request.get('https://www.baidu.com/')
-    console.log("result:",result)
+    let result= yield fetch('https://api.github.com/users/etoah')
+    let json =yield result.json()
+    console.log("result:",json)
 });
-
-// request.get('https://www.baidu.com/', function (error, response, body) {
-//     console.log(body) // Show the HTML for the Google homepage.
-// })
 
 //处理并发
 
-// 数组的写法
-// co(function* () {
-//   var res = yield [
-//     Promise.resolve(1),
-//     Promise.resolve(2)
-//   ];
-//   console.log(res);
-// }).catch(()=>{});
+//数组的写法
+co(function* () {
+  var res = yield [
+    Promise.resolve(1),
+    Promise.resolve(2)
+  ];
+  console.log(res);
+}).catch(()=>{});
