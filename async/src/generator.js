@@ -31,9 +31,11 @@ console.log("---------------fetch data-------------------")
 import fetch from 'node-fetch'
 
 co(function* (){
-    let result= yield fetch('https://api.github.com/users/etoah')
-    let json =yield result.json()
-    console.log("result:",json)
+    let result= yield  [
+         (yield fetch('https://api.github.com/users/tj')).json(),
+         (yield fetch('https://api.github.com/users/etoah')).json(),
+        ];
+    console.log("result:",result)
 });
 
 //处理并发
