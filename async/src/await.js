@@ -1,4 +1,4 @@
-import fetch from 'node-fetch';
+import fetch from 'isomorphic-fetch';
 
 (async function (){
     let result= await fetch('https://api.github.com/users/etoah');
