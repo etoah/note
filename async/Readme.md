@@ -181,6 +181,7 @@ fetch('https://api.github.com/users/etoah')
 
 可以看到promise把原来嵌套的回调，改为级连的方式了，实际是一种代理(proxy)。
 
+新建一个promise实例：
 ```javascript
 var promise = new Promise(function(resolve, reject) {
   // 异步操作的代码
@@ -193,7 +194,7 @@ var promise = new Promise(function(resolve, reject) {
 ```
 promise把成功和失败分别代理到resolved 和 rejected .
 同时还可以级连catch异常。
-新建一个promise实例：
+
 
 到这里异步的问题，有了一个比较优雅的解决方案了，如果要吹毛求疵，还有一些别扭的地方,需要改进。
 #### 问题
