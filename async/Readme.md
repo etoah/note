@@ -12,7 +12,7 @@ javascript 设计之初是为浏览器设计的GUI编程语言，GUI编程的特
 
 由于javascript是单线程，所以采用异步非阻塞的编程模式，javascript的绝大多数api都是异步api.
 
-本文是本人的一个总结：从Brendan Eich刚设计的初版javascript到现在的ES6,一步步总结javascript异步编程历史。
+本文是本人的一个总结：从Brendan Eich刚设计的初版javascript到现在的ES7,一步步总结javascript异步编程历史。
 
 说明：
 本文所有源码请访问：https://github.com/etoah/note/tree/master/async
