@@ -1,0 +1,26 @@
+{
+  "name": "http2",
+  "version": "1.0.0",
+  "description": "test http2.o",
+  "main": "app.js",
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/etoah/note.git"
+  },
+  "keywords": [
+    "http2",
+    "koa"
+  ],
+  "author": "Lucien",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/etoah/note/issues"
+  },
+  "homepage": "https://github.com/etoah/note#readme",
+  "dependencies": {
+    "http2": "^3.3.6"
+  }
+}
