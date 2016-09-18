@@ -17,6 +17,7 @@
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.14.0",
-    "babel-plugin-transform-async-to-generator": "^6.8.0"
+    "babel-plugin-transform-async-to-generator": "^6.8.0",
+    "isomorphic-fetch": "^2.2.1"
   }
 }

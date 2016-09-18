@@ -12,7 +12,7 @@ javascript 设计之初是为浏览器设计的GUI编程语言，GUI编程的特
 
 由于javascript是单线程，所以采用异步非阻塞的编程模式，javascript的绝大多数api都是异步api.
 
-本文是本人的一个总结：从Brendan Eich刚设计的初版javascript到现在的ES6,一步步总结javascript异步编程历史。
+本文是本人的一个总结：从Brendan Eich刚设计的初版javascript到现在的ES7,一步步总结javascript异步编程历史。
 
 说明：
 本文所有源码请访问：https://github.com/etoah/note/tree/master/async
@@ -181,6 +181,7 @@ fetch('https://api.github.com/users/etoah')
 
 可以看到promise把原来嵌套的回调，改为级连的方式了，实际是一种代理(proxy)。
 
+新建一个promise实例：
 ```javascript
 var promise = new Promise(function(resolve, reject) {
   // 异步操作的代码
@@ -193,7 +194,7 @@ var promise = new Promise(function(resolve, reject) {
 ```
 promise把成功和失败分别代理到resolved 和 rejected .
 同时还可以级连catch异常。
-新建一个promise实例：
+
 
 到这里异步的问题，有了一个比较优雅的解决方案了，如果要吹毛求疵，还有一些别扭的地方,需要改进。
 #### 问题
