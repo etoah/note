@@ -3,8 +3,8 @@ const fs =  require('fs');
 const http2 = require('spdy');
 const path = require('path');
 const options = {
-    key: fs.readFileSync('./keys/privatekey.pem'),
-    cert: fs.readFileSync('./keys/certificate.pem')
+    key: fs.readFileSync('./keys/server-key.pem'),
+    cert: fs.readFileSync('./keys/server-cert.pem')
 };
 const app = new express();
 http2
