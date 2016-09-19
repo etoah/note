@@ -21,6 +21,9 @@
   },
   "homepage": "https://github.com/etoah/note#readme",
   "dependencies": {
-    "http2": "^3.3.6"
+    "express": "^4.14.0",
+    "http2": "^3.3.6",
+    "koa": "^1.2.4",
+    "spdy": "^3.4.0"
   }
 }
