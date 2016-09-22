@@ -23,7 +23,7 @@ SPDY 系列协议由谷歌开发，于 2009 年公开。它的设计目标是降
 但是，HTTP/2 跟 SPDY 仍有不同的地方，主要是以下两点：
 
 HTTP/2 支持明文 HTTP 传输，而 SPDY 强制使用 HTTPS
-HTTP/2 消息头的压缩算法采用 HPACK ，而非 SPDY 采用的 DELEFT
+HTTP/2 消息头的压缩算法采用 HPACK ，而非 SPDY 采用的 DEFLATE
 
 >协议文档请见：[rfc7540:HTTP2](https://tools.ietf.org/html/rfc7540)  
 
