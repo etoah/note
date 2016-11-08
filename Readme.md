@@ -6,4 +6,4 @@
 3. [javascript异步编程的前世今生，从onclick到await/async](https://github.com/etoah/note/tree/master/src/async)
 4. [HTTP2特性预览和抓包分析](https://github.com/etoah/note/tree/master/src/http2)
 5. [微信小程序（应用号）开发体验](https://github.com/etoah/wechat-app)
-6. [javascript 如何列出全局对象window的非原生属性.](https://github.com/etoah/note/tree/master/src/misc/global.md)
+6. [javascript 如何列出全局对象window的非原生属性.](https://github.com/etoah/note/tree/master/src/global.md)
