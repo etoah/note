@@ -46,7 +46,7 @@
 
 	__webpack_require__(1);
 
-	console.log("entry");
+	console.log("entry");;console.log('infoloader');
 
 /***/ },
 /* 1 */
@@ -59,6 +59,8 @@
 	    b:2,
 	    c:3
 	}
+	console.log("------------lib end----------------");
+	;console.log('infoloader');
 
 /***/ }
 /******/ ]);

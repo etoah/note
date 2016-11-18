@@ -5,3 +5,4 @@ module.exports={
     b:2,
     c:3
 }
+console.log("------------lib end----------------");
